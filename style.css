@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logoHeader{
+    width: 15vw;
+    border-radius: 15%;
+}
+
+header{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navegation{
+    width: 50vw;
+}
+
+.list{ 
+    display: flex;
+    width: 100%;
+}
+
+.itemList{
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 700;
+    align-items: center;
+}
+
+
+/*WATCH - (max-width: 200px)*/
+
+@media (min-width: 150px) and ( max-width: 200px){
+    header, .list{
+display: flex;
+flex-direction: column;
+align-items: center;  
+background-color: orange;  
+}
+
+    .itemList{
+        font-size: 18px;
+        text-align: center;
+    }
+
+.logoHeader{
+    width: 40vw;
+}
+}
+
+
+/*MOBILE - (min-width: 201px) and (max-width: 500px)*/
+
+@media (min-width: 201px) and (max-width: 500px) {
+
+    header, .list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: yellow;  
+    }
+
+.logoHeader{
+    display: none; /*Imagem sumiu*/
+}
+
+.itemList{
+    font-size: 22px;
+    text-align: center;
+    color: red;
+}
+
+}
+
+
+/*TABLET - (min-width: 501px) and (max-width: 900px)*/
+
+@media (min-width: 501px) and (max-width: 900px) {
+
+    header, .list{
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    background-color: violet; 
+    justify-content: space-evenly; 
+    }
+
+    .itemList{
+        font-size: 12px ;
+        color: white;
+    }
+
+    .logoHeader{
+        width: 25vw;
+    }
+}
+
+/*LAPTOP - (min-width: 901px) and (max-width: 1500px)*/
+
+@media (min-width: 901px) and (max-width: 1500px) {
+
+    header, .list{
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    background-color: green; 
+    justify-content: space-evenly; 
+    }
+
+    .itemList{
+        font-size: 20px ;
+        color: white;
+    }
+
+    .logoHeader{
+        width: 20vw;
+    }
+}
+
+
+/*DESKTOP - (min-width: 1501px) and (max-width: 1800px)*/
+
+@media (min-width: 1501px) and (max-width: 1800px) {
+
+    header, .list{
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    background-color: yellow; 
+    justify-content: space-evenly; 
+    }
+
+    .itemList{
+        font-size: 25px ;
+        color: black;
+    }
+
+    .logoHeader{
+        width: 15vw;
+    }
+}
+
+/*WIDE-SCREEN (DESKTOP TELA AMPLA) - (min-width: 1801px) */
+
+@media (min-width: 1801px) {
+
+    header, .list{
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    background-color: pink; 
+    justify-content: space-evenly; 
+    }
+
+    .itemList{
+        font-size: 25px ;
+        color: black;
+    }
+
+    .logoHeader{
+        width: 15vw;
+    }
+}
