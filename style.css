@@ -10,7 +10,7 @@
 }
 
 header{
-    height: 20vh;
+    /* height: 20vh; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -34,10 +34,34 @@ header{
     align-items: center;
 }
 
+.containerImg{
+    display: flex;
+    justify-content: space-evenly;
+    border: solid red;
+}
+
+.imgDog{
+    /* width: 250px; */
+    /* height: 200px; */
+    width: 15vw;
+    height: 20vh;
+}
+
+.boxInfo{
+    height: 50vh;
+    border: solid blue;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
 
 /*WATCH - (max-width: 200px)*/
 
-@media (min-width: 150px) and ( max-width: 200px){
+/* @media (min-width: 150px) and ( max-width: 200px){ */
+    @media (max-width: 200px){
+
     header, .list{
 display: flex;
 flex-direction: column;
@@ -53,6 +77,29 @@ background-color: orange;
 .logoHeader{
     width: 40vw;
 }
+
+.containerImg{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgDog{
+    width: 90vw;
+}
+
+.boxInfo{
+    height: 30vh;
+}
+p{
+    font-size: 1.3rem;
+}
+
+button{
+    width: 38vw;
+    background-color: yellow;
+    font-size: 1.3rem;
+}
+
 }
 
 
@@ -64,11 +111,17 @@ background-color: orange;
     display: flex;
     flex-direction: column;
     align-items: center;  
-    background-color: yellow;  
     }
 
+header{
+    background-image: url("./imagens/thor.jpeg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 .logoHeader{
-    display: none; /*Imagem sumiu*/
+    display: none; /* Imagem sumiu */
+
 }
 
 .itemList{
@@ -76,6 +129,34 @@ background-color: orange;
     text-align: center;
     color: red;
 }
+
+.containerImg{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgDog{
+    width: 90vw;
+}
+
+.boxInfo{
+    height: 30vh;
+}
+p{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+button{
+    width: 45vw;
+    background-color: orange;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+cursor: pointer;
+}
+
+
+
 
 }
 
@@ -100,6 +181,31 @@ background-color: orange;
     .logoHeader{
         width: 25vw;
     }
+
+.imgDog{
+    width: 200px;
+}
+
+.containerImg{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+p{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: red; 
+    font-weight: 800;
+}
+
+button{
+    width: 16vw;
+    background-color: violet;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
 }
 
 /*LAPTOP - (min-width: 901px) and (max-width: 1500px)*/
@@ -109,6 +215,7 @@ background-color: orange;
     header, .list{
     width: 100%;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;  
     background-color: green; 
     justify-content: space-evenly; 
@@ -121,6 +228,36 @@ background-color: orange;
 
     .logoHeader{
         width: 20vw;
+    }
+
+
+.imgDog{
+    width: 250px;
+}
+
+.containerImg{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.boxInfo{
+    margin: 2rem;
+}
+
+
+    p{
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: red; 
+        font-weight: 800;
+    }
+    
+    button{
+        width: 16vw;
+        background-color: violet;
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
     }
 }
 
@@ -145,6 +282,37 @@ background-color: orange;
     .logoHeader{
         width: 15vw;
     }
+
+    .imgDog{
+        width: 250px;
+    }
+    
+    .containerImg{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    .boxInfo{
+        margin: 2rem;
+    }
+    
+    
+        p{
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: red; 
+            font-weight: 800;
+        }
+        
+        button{
+            width: 16vw;
+            background-color: violet;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+        }
+
+
 }
 
 /*WIDE-SCREEN (DESKTOP TELA AMPLA) - (min-width: 1801px) */
@@ -167,4 +335,100 @@ background-color: orange;
     .logoHeader{
         width: 15vw;
     }
+
+
+    .imgDog{
+        width: 400px;
+    }
+    
+    .containerImg{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    .boxInfo{
+        margin: 2rem;
+    }
+    
+    
+        p{
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: red; 
+            font-weight: 800;
+        }
+        
+        button{
+            width: 10vw;
+            background-color: violet;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+        }
+
+
 }
+
+/*-------FOOTER--------*/
+
+footer{
+    background-color: gray;
+}
+
+.boxOne{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgFooter{
+    width: 6vw;
+    height: 12vh;
+    border-radius: 50%;
+}
+
+@media(min-width: 201px) and (max-width: 500px){
+    footer{
+        background-color: aqua;
+    }
+
+    .imgFooter{
+        width: 25vw;
+        height: 15vh;
+    }
+}
+@media (min-width: 501px) and (max-width: 900px){
+
+    footer{
+        background-color: orange;
+    }
+
+    .imgFooter{
+        width: 25vw;
+        height: 15vh;
+    }
+.boxOne{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media(max-width:200px){
+    footer{
+        background-color: bisque;
+    }
+
+    .imgFooter{
+        width: 50vw;
+        height: 15vh;
+        margin-top: 1rem;
+    }    
+
+    .boxOne{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
